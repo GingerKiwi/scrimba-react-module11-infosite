@@ -12,12 +12,73 @@
 
   --ff-main: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  --flex-display: flex;
+
+}
+
+/* -- TYPOGRAPHY -- */
+
+body {
+  font-family: var(--ff-main);
+}
+
+h1 {
+  font-size: 1.563rem;
+  line-height: 1.1;
+  font-weight: var(--fw-bold);
+  color: var(--clr-white);
+}
+
+h2 {
+  font-size: 1.25rem;
+  line-height: 1.1;
+  font-weight: var(--fw-medium);
+  color: var(--clr-tan-accent);
+}
+
+/* -- LAYOUT -- */
+
+main {
+  display: var(--flex-display);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--clr-charcoal-dark);
 }
 
 .container {
   max-width: 550px;
   margin: 0 auto;
 }
+
+.headshot {
+  width: 100%;
+}
+
+.section--btns {
+  
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn--linkedin {
+  background-color: var(--clr-blue-linkedin);
+  color: var(--clr-white-almost);q
+}
+
+.section--dev-info{
+  font-weight: var(--fw-regular);
+}
+
+/* -- UTILITY CLASSES -- */
+
+
 
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
